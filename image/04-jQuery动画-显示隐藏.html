@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>标题</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      display: none;
+    }
+  </style>
+  <script src="jquery-1.12.4.js"></script>
+  <script>
+    $(function () {
+      //1.显示动画  show(动画执行的时长,动画执行完的回调函数);
+      $('#show').click(function () {
+        //1.1 给id为div1的元素设置显示动画
+        //a.如果没有给参数,就是直接显示,没有动画效果.
+        // $('#div1').show();
+        //b.如果要有动画效果,就应该给参数,参数可以是一个代表时间的毫秒数,或者代表时间的单词(fast normal slow).
+        $('#div1').show(2000);
+        // $('#div1').show('slow');//fast- 200毫秒 normal-400毫秒  slow-600毫秒
+        //c.第二个参数是动画执行完毕后的回调函数.
+        // $('#div1').show(2000, function () {
+        //   alert('动画执行完毕了');
+        // });
+
+        //1.2 给标签为div的元素们设置动画.
+        // $('div').show(2000); //设置操作隐式迭代,每一个div都会做动画啦.
+      });
+
+
+      //2.隐藏动画  hide(动画执行的时长,动画执行完的回调函数);
+      $('#hide').click(function () {
+        $('#div1').hide(1000);
+        // $('#div1').hide(1000, function () {
+        //   alert('隐藏做完了');
+        // });
+      });
+
+
+      //3.切换 toggle();
+      //元素显示就影藏, 隐藏就显示.
+      $('#toggle').click(function () {
+        $('#div1').toggle(1000);
+        // $('#div1').toggle(1000, function () {
+        //   alert('111');
+        // });
+      });
+
+    });
+  </script>
+
+</head>
+<body>
+<input type="button" value="显示" id="show"/>
+<input type="button" value="隐藏" id="hide"/>
+<input type="button" value="切换" id="toggle"/> <br/><br/>
+<div id="div1"></div>
+<br/><br/>
+<div id="div2"></div>
+</body>
+</html>

@@ -1,0 +1,709 @@
+/*1初始化代码*/
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+input,
+img,
+a,
+i,
+p,
+em,
+strong {
+	margin: 0;
+	padding: 0;
+	/*清除内外边距*/
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+
+li {
+	list-style: none;
+}
+
+input {
+	border: 0 none;
+	outline: 0 none;
+}
+
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: normal;
+}
+
+em,
+i {
+	font-style: normal;
+}
+a{
+    color: #f6f6f6;
+    text-decoration : none;
+}
+body {
+	font: 12px/100% "方正悠黑";
+	background-color: #f6f6f6;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* /////////////////////////////////////////////////////// */
+/* 2初始化代码结束 */
+/* 头部导航栏开始 */
+.w {
+	width: 1476px;
+	margin: 0 auto;
+}
+.bg{
+    background: url("../image/FF-HomePage-Cover.jpg")center center;
+    /* width: 100%;
+	height: 770px;
+	overflow: hidden; */
+    top: 0px;
+    left: -2px;
+    width: 102%;
+    height: 725px;
+    opacity: 1;
+    display: block;
+  position: relative;
+    object-fit: cover;
+    visibility: inherit;
+    background-size: cover;
+   
+};
+
+
+
+
+
+.hder .logo {
+    float: left;
+    width: 225px;
+    height: 40px;
+    padding-top:35px;
+    vertical-align: top;
+}
+.hder .nav {
+    float: left;
+    position: absolute;
+    right: 100px;
+   width: 740px;
+  top: 0;
+   
+}
+.hder .nav li {
+	line-height: 25px;
+	margin-right: 10px;
+    font-size: 16px;
+      color: rgb(248, 244, 244);
+}
+.hder .nav li {
+    color: rgb(20, 20, 20);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.bg .title {
+	text-align: center;
+	margin-top: 215px;
+}
+.bg .title1 {
+	font-size: 60px;
+	/* font-weight: 400; */
+    line-height: 36px;
+    color: aliceblue;
+}
+.choice{
+   display: block;
+    /* margin-top: 60px; */
+    margin-bottom: 10px;
+    margin: 60px auto;
+    
+
+}
+
+.more ,.order{
+    color: aliceblue;
+    font-size: 14px;
+    line-height: 44px;
+    display: block;
+    border-bottom: 3px solid rgb(190, 75, 75);
+    padding-bottom: 12px;
+    width: 169px;
+    height: 44px;   
+    text-align: center;
+    
+    justify-content: center;
+}
+.more{
+    margin-right: 16px;
+    float: left;
+    width: 169px;
+    margin-left: 572px;
+    text-align: center;
+
+}
+.order{
+    display: block;
+    width: 90px;
+    float: left;
+    text-align: center;
+    
+}
+
+.ffd{
+    font-size: 16px;
+    width: 238px;
+    height: 270px;
+    flood-color: #000;
+  
+    display: none; 
+  
+    /* background-color: #fff; */
+    position: absolute;
+    top: 120px;
+    left: 800px;
+}
+.ffd div {
+    width: 110px;
+    display: block;
+   
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid rgb(14, 13, 13);
+}
+.ffd div a{
+    display: block;
+    flood-color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+/* .nav {
+    width: 330px;
+    height: px;
+    margin: 31px auto ;
+    padding-left: 10px;
+    background-image: url(images/bg.jpg);
+} */
+
+.nav li{
+    background-image: url(images/libg.jpg);
+}
+
+.nav > ul > li {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    height: 400px;
+}
+
+.nav a {
+    display: block;
+    height: 30px;
+    width: 100px;
+    text-decoration: none;
+    color: rgb(245, 229, 229);
+    line-height: 30px;
+    text-align: center;
+}
+
+.nav li ul {
+    position: relative;
+    top: 30px;
+    display: none;
+}
+
+.nav ul li ul{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 30px;
+    color: rgb(17, 17, 17);
+    background-color: #fff;
+}
+.nav ul li ul li {
+    display: block;
+    font-size: 14px;
+    color: #000;
+
+}
+
+/* 
+ .inner1{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    left: 800px;
+    top: 100px;
+    /* display: none; */
+/* } */
+/* .inner2{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    left: 1000px;
+    top: 100px;
+    /* display: none; */
+/* } */
+
+/* .inner3{
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    /* display: none; */
+/* }  */
+
+
+
+/* 中间开始 */
+/*3 手风琴效果开始///////////////// */
+
+
+
+ul {
+    list-style: none;
+    width: 2400px;
+}
+
+#accordion {
+    width: 1524px;
+    height: 731px;
+    position: relative;
+    /* margin: 712px auto; */
+    overflow: hidden;
+}
+
+#accordion li {
+    width: 381px;
+    height: 400px;
+    float: left;
+    
+    box-sizing: border-box;
+  
+}
+.nav ul>li>a:hover{color:#ff0000}
+
+.innerContainer-8-309 {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 36px;
+}
+
+
+
+/* 4手风琴结束 */
+/* vR开始立即体验 /////////////////*/
+
+
+
+.container-8-359 {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    position: relative;
+    /* margin: -712px auto; */
+    font-family: Roboto;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+div, form {
+    box-sizing: border-box;
+}
+
+ .cta-8-374{
+     width: 284px;
+     height: 69px;
+     left: 600px;
+     top: 230px;
+   
+      position: absolute;
+      border-left-width: 
+
+ }
+ .titleImg-8-367 {
+    width: 100%;
+    height: auto;
+}
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+   
+  
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+/* body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+} */
+.container-8-359{
+position: relative;
+
+}
+.btn-8-377{
+    font-size: 16px;
+    display: block;
+    width: 300px;
+    height: 86px;
+   
+    text-align: center;
+    line-height: 70px;
+    border:1px solid #99604c;
+    background-color: #99604c;;
+}
+.btn-8-365:hover {
+    color: #99604c;
+    background-color: transparent;
+}
+/* 图片 */
+.feature-8-366 {
+    order: 3;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    transition: all .6s ease-in-out;
+    align-items: center;
+    padding-left: 72px;
+   
+    justify-content: center;
+    transition-delay: .4s;
+}
+.feature-8-366 img{
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    right: 30px;
+}
+.title-8-371 {
+   
+    left: 113px;
+    position: absolute;
+    top: 180px;
+}
+.title-8-371 img{
+    width: 300px;
+    height: 150px;
+    background: url(../images/search.png) no-repeat;
+    /* 这是为了文字相对于我定位 */
+  
+
+
+
+}
+
+/* 眼睛图片 */
+.ff-icon-goggles:before {
+    content: "\e935";
+
+}
+
+
+
+
+
+
+
+
+/* 5现在生活开始////////////// */
+.video-8-384 {
+    top: 0px;
+    left: -2px;
+    width: 102%;
+    
+    height: 100%;
+    opacity: 1;
+    display: block;
+    position: relative;
+    object-fit: cover;
+    visibility: inherit;
+
+    background-size: cover;
+}
+.titleContainer-8-389 {
+    color: white;
+}
+
+.titleContainer-8-385 {
+    top: 20%;
+    left: 60%;
+    width: 500px;
+    height: 500px;
+    
+    position: absolute;
+    overflow: hidden;
+    font-family: Roboto;
+    font-weight: 300;
+}
+ .videoContainer-8-383 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+     overflow: hidden;
+}
+
+.titleContainer-8-389 {
+    color: white;
+}
+
+.titleContainer-8-385 {
+    top: 20%;
+    left: 60%;
+    width: 300px;
+    position: absolute;
+    overflow: hidden;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+
+
+/* 6ff官方博客FUTURESIGHT/////////////照明点亮/////////// */
+.container-8-414 {
+    width: 100%;
+    display: flex;
+    background: white;
+    align-items: center;
+    /* margin-bottom: 144px; */
+    flex-direction: column;
+}
+.sectionHeader-8-415 {
+    width: 100%;
+    display: flex;
+    padding: 36px;
+    overflow: hidden;
+    align-items: flex-end;
+}
+.tagline-8-436{
+    font-size: 22px;
+    margin-left: 48px;
+    margin-bottom: 60px;
+}
+.titleLine-8-432{
+    font-size: 70px;
+    width: 500px;
+    height: 80px;
+    margin-left: 42px;
+    font-weight: 300;
+    font-family: Courier New, Courier, monospace
+}
+.featuredBlock-8-420 {
+    width: 90%;
+    height: 760px;
+    padding: 36px;
+    clip-path: polygon(85% 0, 100% 31%, 100% 99%, 0 100%, 0 0);
+    background-size: cover;
+}
+.featuredContent-8-421 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    font-family: Roboto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.date-8-422 {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+/* 背景tu */
+.featuredBlock-8-433{
+
+
+}
+
+/* 7动态车俩控制 */
+.lgCol-8-452 {
+    width: 60%;
+    
+    margin-left: 400px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+}
+.imageWrapper-8-470{
+    width: 800px;
+    height: 700px;
+}
+.date-8-454 {
+    display: flex;
+    font-size: 15px;
+    align-items: flex-end;
+    font-weight: 500;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    justify-content: space-between;
+}
+.imageContainer-8-455 {
+    width: 100%;
+    transition: all .5s ease-in-out;
+    margin-bottom: 36px;
+}
+.title-8-460 {
+    color: #0f1317;
+    font-size: 26px;
+    line-height: 1.4;
+    font-weight: 300;
+    margin-bottom: 36px;
+}
+.description-8-461 {
+    color: #0f1317;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 30px;
+    margin-bottom: 36px;
+}
+.moreBtn-8-453 {
+    color: hsl(16, 34%, 45%);
+    display: flex;
+    font-size: 12px;
+    display: block;
+    line-height: 45px;
+    font-family: Roboto;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+}
+
+.image-8-471{
+    width: 800px;
+    height: 700px;
+}
+
+
+
+/*footer部分 */
+
+.footer-8-2 {
+    width: 100%;
+}
+
+.container-8-536 {
+    width: 100%;
+    padding: 36px;
+    background: black;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.main-8-537 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+    justify-content: space-between;
+}
+.row-8-542 {
+    width: 100%;
+    display: flex;
+    padding-top: 27px;
+    justify-content: space-between;
+}
+.copyright-8-546 {
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+}
+.social-8-543 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-8-560 {
+    position: relative;
+}
+.rightColumn-8-556 {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-8-559{
+    margin-right: 68px;
+}
+
+
+
+.weixin{
+    width: 176px;
+    height: 65px;
+    float: right;
+    margin-right: 39px;
+
+}
+
+
+
+.banner{
+    width:100%;
+    height:50px;
+    background:pink;
+
+}
+.banner ul li{
+    list-style:none;
+    display:inline-block;
+    margin-right:100px;
+    line-height:50px;
+}
+a{
+    color:gray;
+    text-decoration:none;
+}
+/* //下面这个类为动态添加的类 */
+.fixDiv{
+   position:fixed;
+    top:0;
+    left:0;
+}
+
+
+
+/* *************************** */
+
+li {
+    height: 731px !important;
+}
+li img {
+    height: 731px !important;
+
+｝
